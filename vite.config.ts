@@ -14,6 +14,7 @@ export default defineConfig({
         short_name: 'BseePortal',
         description: 'A student portal for BSEE students, providing access to essential services and information.',
         theme_color: '#ffffff',
+        display: 'fullscreen',
         icons: [
           {
             src: 'pwa-192x192.png',
