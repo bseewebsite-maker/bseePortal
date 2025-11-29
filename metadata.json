@@ -1,0 +1,5 @@
+{
+  "name": "BseePortal",
+  "description": "A student portal for BSEE students, providing access to essential services and information after a secure, PIN-based registration process powered by Supabase.",
+  "requestFramePermissions": []
+}
