@@ -562,21 +562,6 @@ const Dashboard: React.FC<DashboardProps> = ({ session, initialMessage }) => {
             />
 
             <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
-                <div className={shouldHideChrome ? 'hidden md:block' : 'block'}>
-                    <Header 
-                        profile={profile} 
-                        setActiveView={setActiveView} 
-                        onSignOut={handleSignOut} 
-                        isSigningOut={isSigningOut}
-                        notifications={notifications}
-                        unreadChatCount={unreadChatCount}
-                        onMarkAsRead={handleMarkAsRead}
-                        onDeleteRead={handleDeleteRead}
-                        onViewProfile={handleViewUserProfile}
-                        onViewPost={handleViewPost}
-                    />
-                </div>
-
                 <main className={mainClasses}>
                     {activeView === 'homepage' && profile && <ProfileContent profile={profile} user={session.user} onViewProfile={handleViewUserProfile} />}
                     
